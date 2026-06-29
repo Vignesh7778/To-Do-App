@@ -37,7 +37,6 @@
             <td>
               @if (task.status == 'Pending') {
                 <button class="complete-btn" (click)="completeTask(task.id)">✔ Complete</button>
-
               } @else {
                 <button class="pending-btn" (click)="pendingTask(task.id)">↺ Pending</button>
               }
@@ -49,4 +48,12 @@
       </tbody>
     </table>
   }
+  <footer class="footer">
+
+    <p>A simple task management application built using Angular.</p>
+
+    <p>Copyright@ 2026 All Rights Reserved.</p>
+
+    <p>Developed with ❤️ by <strong>Vignesh M</strong></p>
+  </footer>
 </div>

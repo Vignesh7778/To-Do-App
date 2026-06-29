@@ -247,17 +247,38 @@ button:hover{
     font-style:italic;
 
 }
-
 .footer{
 
-    margin-top:35px;
+    margin-top:40px;
+
+    padding-top:20px;
 
     border-top:1px solid #ddd;
 
-    padding-top:15px;
+    text-align:center;
 
     color:#666;
 
+}
+
+.footer h4{
+
+    color:#6c63ff;
+
+    margin-bottom:8px;
+
+}
+
+.footer p{
+
+    margin:6px 0;
+
     font-size:14px;
+
+}
+
+.footer strong{
+
+    color:#6c63ff;
 
 }
