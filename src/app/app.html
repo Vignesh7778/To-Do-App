@@ -1,0 +1,52 @@
+<div class="arrange-center">
+  <h1>To-do App</h1>
+  <div class="input-group">
+    <input [(ngModel)]="task" type="text" placeholder="Enter the task" />
+    <button (click)="addTask()" [disabled]="task.trim() == ''">Add</button>
+  </div>
+  <!-- displaying to the screen -->
+  @if (taskList.length > 0) {
+    <table class="task-table">
+      <thead>
+        <tr>
+          <th>S.no</th>
+          <th>Task Lists</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (task of taskList; track task.id) {
+          <tr>
+            <td>{{ task.id }}</td>
+
+            <td>{{ task.name }}</td>
+
+            <td>
+              @if (task.status == 'Pending') {
+                <span class="pending">
+                  {{ task.status }}
+                </span>
+              } @else {
+                <span class="completed">
+                  {{ task.status }}
+                </span>
+              }
+            </td>
+
+            <td>
+              @if (task.status == 'Pending') {
+                <button class="complete-btn" (click)="completeTask(task.id)">✔ Complete</button>
+
+              } @else {
+                <button class="pending-btn" (click)="pendingTask(task.id)">↺ Pending</button>
+              }
+
+              <button class="delete-btn" (click)="deleteTask(task.id)">🗑 Delete</button>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  }
+</div>

@@ -1,0 +1,263 @@
+/* ===========================
+   Main Container
+=========================== */
+
+.arrange-center{
+    width:700px;
+    margin:50px auto;
+    padding:25px;
+    text-align:center;
+
+    border:1px solid #ddd;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+/* ===========================
+   Input Section
+=========================== */
+
+.input-group{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin:25px 0;
+}
+
+.input-group input{
+
+    flex:1;
+
+    max-width:400px;
+
+    padding:10px;
+
+    font-size:16px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.input-group input:focus{
+
+    border-color:royalblue;
+
+    box-shadow:0 0 5px rgba(65,105,225,.3);
+
+}
+
+.input-group button{
+
+    padding:12px 20px;
+
+}
+
+
+/* ===========================
+   Buttons
+=========================== */
+
+button{
+
+    background:royalblue;
+    color:white;
+
+    border:none;
+
+    padding:18px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+button:hover{
+
+    background:darkblue;
+
+}
+
+.delete-btn{
+
+    background:#ff4d4d;
+
+}
+
+.delete-btn:hover{
+
+    background:#cc0000;
+
+}
+
+
+/* ===========================
+   Table
+=========================== */
+
+.task-table{
+
+    width:100%;
+
+    margin-top:25px;
+
+    border-collapse:collapse;
+
+}
+
+.task-table thead{
+
+    border-bottom:2px solid #ddd;
+
+}
+
+.task-table th{
+
+    padding:15px;
+
+    text-align:center;
+
+    font-size:17px;
+
+}
+
+.task-table td{
+
+    padding:18px;
+
+    text-align:center;
+
+}
+
+.task-table tbody tr{
+
+    border-bottom:1px solid #eee;
+
+}
+
+.task-table tbody tr:hover{
+
+    background:#f8f8f8;
+
+}
+
+
+/* Left align only Task column */
+
+.task-table tbody td:nth-child(2){
+
+    text-align:left;
+
+}
+
+
+/* ===========================
+   Status Badge
+=========================== */
+
+.pending{
+
+    background:#e6f7e6;
+
+    color:green;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-weight:600;
+
+}
+.complete-btn{
+
+    background:#28a745;
+
+    color:white;
+
+    margin-right:8px;
+
+}
+
+.complete-btn:hover{
+
+    background:#1f7a33;
+
+}
+
+.pending-btn{
+
+    background:#ffc107;
+
+    color:black;
+
+    margin-right:8px;
+
+}
+
+.pending-btn:hover{
+
+    background:#d39e00;
+
+}
+
+.completed{
+
+    background:#cce5ff;
+
+    color:#004085;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+}
+
+.delete-btn{
+
+    background:#dc3545;
+
+}
+
+.delete-btn:hover{
+
+    background:#b21f2d;
+
+}
+
+.empty-message{
+
+    margin-top:30px;
+
+    color:gray;
+
+    font-size:18px;
+
+    font-style:italic;
+
+}
+
+.footer{
+
+    margin-top:35px;
+
+    border-top:1px solid #ddd;
+
+    padding-top:15px;
+
+    color:#666;
+
+    font-size:14px;
+
+}
